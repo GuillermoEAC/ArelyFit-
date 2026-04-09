@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { Sparkles } from 'lucide-react';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/Arely_picture_gluteos3.PNG.jpeg';
 
 const SLOGANS_KEY = ['slogan_1', 'slogan_2', 'slogan_3', 'slogan_4', 'slogan_5'];
 

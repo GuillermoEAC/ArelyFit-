@@ -13,6 +13,10 @@ import LanguageCurrencyModal from '../components/LanguageCurrencyModal';
 import Footer from '../components/Footer';
 import { PROGRAMS, TESTIMONIALS } from '../data/programs';
 
+import arelyPic1 from '../assets/Arely_picture1.jpeg';
+import arelyPic2 from '../assets/Arely_picture2.jpeg';
+import arelyPic3 from '../assets/Arely_picture3.jpeg';
+
 export default function HomePage() {
   const { t, showWelcomeModal, convertPrice, openCheckout } = useApp();
   const [showLangModal, setShowLangModal] = useState(false);
@@ -103,20 +107,23 @@ export default function HomePage() {
 
       {/* SECOND Motivational Banner */}
       <div style={{
-        background: 'linear-gradient(135deg, #DDD6F3, #C8EDE0)',
-        padding: '32px 24px',
+        background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("${arelyPic2}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center',
+        backgroundAttachment: 'fixed',
+        padding: '64px 24px',
         textAlign: 'center',
       }}>
         <p style={{
           fontFamily: 'var(--font-heading)',
           fontStyle: 'italic',
-          fontSize: 'clamp(1rem, 2vw, 1.4rem)',
-          color: 'var(--text-primary)',
+          fontSize: 'clamp(1.2rem, 2vw, 1.6rem)',
+          color: 'white',
           margin: '0 auto',
           maxWidth: '600px',
         }}>
           "Tu cuerpo es tu obra maestra.{' '}
-          <span style={{ color: 'var(--lavender-dark)' }}>Cuídalo.</span>"
+          <span style={{ color: 'var(--rose-light)' }}>Cuídalo.</span>"
         </p>
       </div>
 
@@ -212,16 +219,19 @@ export default function HomePage() {
 
       {/* Third Motivational Banner */}
       <div style={{
-        background: 'linear-gradient(135deg, #F9C5C5, #DDD6F3, #C8EDE0)',
-        padding: '48px 24px',
+        background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${arelyPic3}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        padding: '64px 24px',
         textAlign: 'center',
       }}>
         <p style={{
           fontFamily: 'var(--font-heading)',
           fontStyle: 'italic',
-          fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
-          color: 'var(--text-primary)',
-          marginBottom: '16px',
+          fontSize: 'clamp(1.4rem, 2.5vw, 2rem)',
+          color: 'white',
+          marginBottom: '24px',
         }}>
           "La fuerza no es solo física. Es mental."
         </p>
@@ -256,15 +266,19 @@ export default function HomePage() {
             </div>
 
             <div className="glass-card" style={{ padding: 'var(--space-xl)', textAlign: 'center' }}>
-              <div style={{
-                width: '80px', height: '80px', borderRadius: '50%',
-                background: 'linear-gradient(135deg, var(--rose-light), var(--lavender-light))',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                margin: '0 auto 20px',
-                fontSize: '2.5rem',
-              }}>
-                👩🏽‍🏋️
-              </div>
+              <img
+                src={arelyPic2}
+                alt="Arely"
+                style={{
+                  width: '120px', height: '120px', borderRadius: '50%',
+                  objectFit: 'cover',
+                  objectPosition: 'top',
+                  margin: '0 auto 20px',
+                  display: 'block',
+                  border: '4px solid white',
+                  boxShadow: '0 4px 14px rgba(0,0,0,0.1)'
+                }}
+              />
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                 {[
                   { n: '5+', l: 'Años de experiencia', icon: Clock },

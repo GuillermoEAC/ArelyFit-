@@ -1,6 +1,11 @@
 // =============================================
 // HARDCODED PROGRAMS DATA — arely.fit
 // =============================================
+import absImg from '../assets/Arely_picture_abs.PNG';
+import fullbodyImg from '../assets/Arely_picture_fullbody.PNG';
+import gluteosImg from '../assets/Arely_picture_gluteos.PNG';
+import runImg from '../assets/Arely_picture_run.jpeg';
+
 
 export const PROGRAMS = [
   {
@@ -15,8 +20,8 @@ export const PROGRAMS = [
     emoji: '🍑',
     gradient: 'var(--gradient-glutes)',
     accentColor: 'var(--rose)',
-    stripeLink: 'https://buy.stripe.com/test_your_glutes_link_here',
-    paypalLink: 'https://paypal.me/arelyfit/9.99',
+    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
+    image: gluteosImg,
     // Detailed weekly plan
     weeklyPlan: [
       {
@@ -67,8 +72,8 @@ export const PROGRAMS = [
     emoji: '✨',
     gradient: 'var(--gradient-fullbody)',
     accentColor: 'var(--lavender-dark)',
-    stripeLink: 'https://buy.stripe.com/test_your_fullbody_link_here',
-    paypalLink: 'https://paypal.me/arelyfit/19.99',
+    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
+    image: fullbodyImg,
     weeklyPlan: [
       {
         week: 1,
@@ -107,8 +112,8 @@ export const PROGRAMS = [
     emoji: '💫',
     gradient: 'var(--gradient-core)',
     accentColor: 'var(--mint-dark)',
-    stripeLink: 'https://buy.stripe.com/test_your_core_link_here',
-    paypalLink: 'https://paypal.me/arelyfit/9.99',
+    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
+    image: absImg,
     weeklyPlan: [
       {
         week: 1,
@@ -147,8 +152,8 @@ export const PROGRAMS = [
     emoji: '🥗',
     gradient: 'var(--gradient-nutrition)',
     accentColor: 'var(--cream-dark)',
-    stripeLink: 'https://buy.stripe.com/test_your_nutrition_link_here',
-    paypalLink: 'https://paypal.me/arelyfit/2.99',
+    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
+    image: runImg,
     weeklyPlan: [],
     nutritionContent: {
       macros: { protein: '30%', carbs: '40%', fat: '30%' },

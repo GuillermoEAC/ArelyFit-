@@ -28,20 +28,45 @@ export default function ProgramCard({ program, featured = false }) {
       {featured && <div className="featured-badge">Popular</div>}
 
       {/* Card Header */}
-      <div className="card-header" style={{ background: program.gradient }}>
-        <span className="card-emoji">
-          <ProgramIcon size={38} color={program.accentColor} strokeWidth={1.5} />
-        </span>
-        <p className="card-category">{category}</p>
-        <h3 className="card-title">{name}</h3>
+      <div className="card-header" style={{
+        background: program.image
+          ? `linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%), url("${program.image}")`
+          : program.gradient,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '24px',
+        color: program.image ? 'white' : 'var(--text-primary)',
+        height: '200px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        position: 'relative'
+      }}>
+        {!program.image && (
+          <span className="card-emoji">
+            <ProgramIcon size={38} color={program.accentColor} strokeWidth={1.5} />
+          </span>
+        )}
+        <p className="card-category" style={{
+          color: program.image ? 'rgba(255,255,255,0.8)' : 'var(--text-secondary)'
+        }}>{category}</p>
+        <h3 className="card-title" style={{ color: 'inherit' }}>{name}</h3>
         <div className="card-meta">
-          <span className="card-meta-item">
+          <span className="card-meta-item" style={{
+            color: program.image ? 'white' : 'inherit',
+            background: program.image ? 'rgba(0,0,0,0.3)' : 'var(--surface)',
+            backdropFilter: 'blur(4px)'
+          }}>
             <Clock size={13} />
             {program.durationWeeks
               ? `${program.durationWeeks} ${t.weeks}`
               : t.permanent}
           </span>
-          <span className="card-meta-item">
+          <span className="card-meta-item" style={{
+            color: program.image ? 'white' : 'inherit',
+            background: program.image ? 'rgba(0,0,0,0.3)' : 'var(--surface)',
+            backdropFilter: 'blur(4px)'
+          }}>
             <Dumbbell size={13} />
             {level}
           </span>

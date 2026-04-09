@@ -9,12 +9,8 @@ export default function CheckoutModal() {
   const name = t[checkoutProgram.nameKey] || checkoutProgram.nameKey;
   const price = convertPrice(checkoutProgram.price);
 
-  const handleStripe = () => {
-    window.open(checkoutProgram.stripeLink, '_blank', 'noopener,noreferrer');
-  };
-
-  const handlePayPal = () => {
-    window.open(checkoutProgram.paypalLink, '_blank', 'noopener,noreferrer');
+  const handleCheckout = () => {
+    window.open(checkoutProgram.checkoutLink || 'https://pay.hotmart.com/U105119323X?checkoutMode=10', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -73,28 +69,15 @@ export default function CheckoutModal() {
           {t.checkout_desc}
         </p>
 
-        {/* Stripe Button */}
+        {/* Checkout Button */}
         <button
           className="btn btn-primary btn-full btn-lg"
-          onClick={handleStripe}
-          id={`stripe-pay-${checkoutProgram.id}`}
+          onClick={handleCheckout}
+          id={`checkout-pay-${checkoutProgram.id}`}
           style={{ marginBottom: '12px' }}
         >
           <CreditCard size={18} />
-          {t.checkout_proceed}
-        </button>
-
-        {/* Divider */}
-        <div className="checkout-divider">o</div>
-
-        {/* PayPal Button */}
-        <button
-          className="btn btn-secondary btn-full"
-          onClick={handlePayPal}
-          id={`paypal-pay-${checkoutProgram.id}`}
-          style={{ marginBottom: '12px' }}
-        >
-          {t.checkout_paypal}
+          {t.checkout_proceed || 'Realizar pago seguro'}
         </button>
 
         {/* Security Badge */}

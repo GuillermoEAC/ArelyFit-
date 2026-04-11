@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, ChevronDown } from 'lucide-react';
 import heroImg from '../assets/Arely_picture_gluteos3.PNG.jpeg';
+import AnimatedSection from './AnimatedSection';
 
 const SLOGANS_KEY = ['slogan_1', 'slogan_2', 'slogan_3', 'slogan_4', 'slogan_5'];
 
@@ -25,9 +26,19 @@ export default function HeroSection() {
 
   return (
     <section className="hero" id="hero">
+      {/* Full-bleed background image */}
+      <div
+        className="hero-bg-img"
+        style={{
+          backgroundImage: `url("${heroImg}")`,
+        }}
+      />
+      {/* Gradient overlay */}
+      <div className="hero-overlay" />
+
+      {/* Floating glass card — content lives here */}
       <div className="hero-inner">
-        {/* Content */}
-        <div className="hero-content">
+        <AnimatedSection className="hero-glass-card" animation="fade-up">
           <div className="hero-badge">
             <Sparkles size={14} />
             arely.fit — Programas Premium
@@ -39,7 +50,6 @@ export default function HeroSection() {
           </h1>
 
           <p className="hero-attribution">{t.hero_attribution}</p>
-
           <p className="hero-description">{t.hero_sub}</p>
 
           <div className="hero-actions">
@@ -59,60 +69,45 @@ export default function HeroSection() {
             </button>
           </div>
 
-          {/* Stats */}
+          {/* Stats row */}
           <div className="hero-stats">
             <div className="hero-stat">
               <span className="hero-stat-number">???+</span>
               <span className="hero-stat-label">Clientas felices</span>
             </div>
+            <div className="hero-stat-divider" />
             <div className="hero-stat">
               <span className="hero-stat-number">4</span>
               <span className="hero-stat-label">Programas</span>
             </div>
+            <div className="hero-stat-divider" />
             <div className="hero-stat">
               <span className="hero-stat-number">4</span>
               <span className="hero-stat-label">Idiomas</span>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
 
-        {/* Hero Image */}
-        <div className="hero-image-wrapper">
-          <div className="hero-image-bg" />
-          <img
-            src={heroImg}
-            alt="Arely Fit — Programas de fitness para mujeres"
-            className="hero-image"
-          />
+        {/* Rotating Slogan */}
+        <div
+          className="hero-slogan"
+          style={{ opacity: fade ? 1 : 0 }}
+        >
+          <p className="hero-slogan-text">
+            <Sparkles size={14} style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle', marginTop: '-2px' }} />
+            "{t[SLOGANS_KEY[sloganIdx]]}"
+          </p>
         </div>
       </div>
 
-      {/* Rotating Slogan Banner */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          background: 'rgba(255,255,255,0.6)',
-          backdropFilter: 'blur(10px)',
-          borderTop: '1px solid rgba(255,255,255,0.8)',
-          padding: '14px 24px',
-          textAlign: 'center',
-          transition: 'opacity 0.4s ease',
-          opacity: fade ? 1 : 0,
-        }}
+      {/* Scroll indicator */}
+      <button
+        className="hero-scroll-btn"
+        onClick={() => scrollTo('programs')}
+        aria-label="Scroll down"
       >
-        <p style={{
-          fontFamily: 'var(--font-heading)',
-          fontStyle: 'italic',
-          fontSize: 'clamp(0.8rem, 1.5vw, 1rem)',
-          color: 'var(--text-secondary)',
-          margin: 0,
-        }}>
-          "{t[SLOGANS_KEY[sloganIdx]]}"
-        </p>
-      </div>
+        <ChevronDown size={22} />
+      </button>
     </section>
   );
 }

@@ -54,7 +54,7 @@ export default function ProgramCard({ program, featured = false }) {
         <div className="card-meta">
           <span className="card-meta-item" style={{
             color: program.image ? 'white' : 'inherit',
-            background: program.image ? 'rgba(0,0,0,0.3)' : 'var(--surface)',
+            background: program.image ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.7)',
             backdropFilter: 'blur(4px)'
           }}>
             <Clock size={13} />
@@ -64,7 +64,7 @@ export default function ProgramCard({ program, featured = false }) {
           </span>
           <span className="card-meta-item" style={{
             color: program.image ? 'white' : 'inherit',
-            background: program.image ? 'rgba(0,0,0,0.3)' : 'var(--surface)',
+            background: program.image ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.7)',
             backdropFilter: 'blur(4px)'
           }}>
             <Dumbbell size={13} />

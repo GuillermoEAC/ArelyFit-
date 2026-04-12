@@ -1,6 +1,7 @@
 // =============================================
 // HARDCODED PROGRAMS DATA — arely.fit
 import gluteosImg from '../assets/Arely_picture_rutina_gluteos.jpg';
+import piernaImg from '../assets/Arely_picture_rutina_pierna.jpeg';
 import coreImg from '../assets/Arely_picture_rutina_core.PNG';
 import upperbodyImg from '../assets/Arely_picture_rutina_upperbody.PNG';
 import nutricionImg from '../assets/Arely_picture_gui_nutricional.jpeg';
@@ -58,7 +59,44 @@ export const PROGRAMS = [
     ],
     tags: ['glúteos', 'fuerza', 'volumen', 'sin equipo posible'],
   },
-
+  {
+    id: 'legs',
+    nameKey: 'prog2_name',
+    descKey: 'prog2_desc',
+    includesKey: 'prog2_includes',
+    price: 7.99,
+    durationWeeks: 6,
+    category: 'cat_fullbody',
+    levelKey: 'intermediate',
+    emoji: '🦵',
+    gradient: 'var(--gradient-fullbody)',
+    accentColor: 'var(--lavender-dark)',
+    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
+    image: piernaImg,
+    weeklyPlan: [
+      {
+        week: 1,
+        title: 'Fuerza Cuádriceps',
+        exercises: [
+          { name: 'Sentadilla Goblet', sets: 4, reps: '10-12', rest: '60 seg' },
+          { name: 'Prensa', sets: 4, reps: '12', rest: '60 seg' },
+          { name: 'Extensiones', sets: 3, reps: '15', rest: '45 seg' },
+          { name: 'Desplantes', sets: 3, reps: '10 c/lado', rest: '45 seg' },
+        ]
+      },
+      {
+        week: 2,
+        title: 'Enfoque Femoral',
+        exercises: [
+          { name: 'Peso muerto', sets: 4, reps: '10-12', rest: '60 seg' },
+          { name: 'Curl de isquios', sets: 4, reps: '12', rest: '45 seg' },
+          { name: 'Hip Thrust con variaciones', sets: 3, reps: '12', rest: '60 seg' },
+          { name: 'Elevación de talones', sets: 4, reps: '15-20', rest: '45 seg' },
+        ]
+      },
+    ],
+    tags: ['piernas', 'cuádriceps', 'femoral', 'hipertrofia'],
+  },
   {
     id: 'core-confidence',
     nameKey: 'prog3_name',

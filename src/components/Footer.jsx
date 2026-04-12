@@ -33,6 +33,7 @@ export default function Footer({ onLegalClick }) {
             <p className="footer-heading">{t.nav_programs}</p>
             <ul className="footer-links">
               <li><a href="#programs">{t.prog1_name}</a></li>
+              <li><a href="#programs">{t.prog2_name}</a></li>
               <li><a href="#programs">{t.prog3_name}</a></li>
               <li><a href="#programs">{t.prog4_name}</a></li>
               <li><a href="#nutrition">{t.prog5_name}</a></li>

@@ -38,8 +38,8 @@ export default function HomePage() {
   const [showLangModal, setShowLangModal] = useState(false);
   const [showConstructionModal, setShowConstructionModal] = useState(false);
 
-  const fitnessPrograms = PROGRAMS.slice(0, 3);
-  const nutritionProgram = PROGRAMS[3];
+  const fitnessPrograms = PROGRAMS.slice(0, 4);
+  const nutritionProgram = PROGRAMS[4];
 
   return (
     <>

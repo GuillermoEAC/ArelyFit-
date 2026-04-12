@@ -40,8 +40,8 @@ export const fr = {
   prog1_desc: 'Le programme ultime pour activer, développer et définir tes fessiers. Routines progressives avec ou sans équipement.',
   prog1_includes: ['Routines vidéo hebdomadaires', 'Guide d\'activation', 'Suivi des progrès', 'Communauté de soutien'],
 
-  prog2_name: 'Full Body Glow',
-  prog2_desc: 'Transforme tout ton corps en 6 semaines. Haut du corps, jambes et cardio fusionnés en routines efficaces.',
+  prog2_name: 'Jambes • Quads & Ischios',
+  prog2_desc: 'Développez la force et le volume de vos quadriceps et ischio-jambiers avec des mouvements ciblés.',
   prog2_includes: ['Plan complet de 6 semaines', 'Routines haut du corps', 'Routines jambes', 'Conseils de récupération'],
 
   prog3_name: 'Core & Confidence',
@@ -55,6 +55,10 @@ export const fr = {
   prog5_name: 'Guide Nutritionnel',
   prog5_desc: 'Un guide complet et permanent pour comprendre quoi manger, quand et comment pour booster tes résultats.',
   prog5_includes: ['Plan alimentaire de base', 'Liste de courses saine', 'Recettes fitness délicieuses', 'Supplémentation de base'],
+
+  prog6_name: 'Leg Day Focus',
+  prog6_desc: 'Une routine dédiée entièrement à tes quadriceps et ischio-jambiers pour des jambes puissantes.',
+  prog6_includes: ['Jours quadriceps', 'Isolation ischio-jambiers', 'Techniques d\'hypertrophie', 'Suivi de progression'],
 
   cat_glutes: 'Fessiers',
   cat_fullbody: 'Corps Entier',

@@ -40,8 +40,8 @@ export const en = {
   prog1_desc: 'The ultimate program to activate, grow and define your glutes. Progressive routines with or without equipment.',
   prog1_includes: ['Weekly video routines', 'Activation guide', 'Progress tracking', 'Support community'],
 
-  prog2_name: 'Full Body Glow',
-  prog2_desc: 'Transform your legs with routines focused on strength and muscle tone.',
+  prog2_name: 'Legs • Quads & Hamstrings',
+  prog2_desc: 'Build strength and volume in your quads and hamstrings with dedicated pushing and pulling movements.',
   prog2_includes: ['Complete 6-week plan', 'Hypertrophy routines', 'Functional routines', 'Recovery tips'],
 
   prog3_name: 'Core & Confidence',

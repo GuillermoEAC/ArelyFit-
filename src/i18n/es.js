@@ -46,8 +46,8 @@ export const es = {
   prog1_desc: 'El programa definitivo para activar, crecer y definir tus glúteos. Rutinas progresivas con o sin equipo.',
   prog1_includes: ['Rutinas semanales en video', 'Guía de activación', 'Seguimiento de progreso', 'Comunidad de apoyo'],
 
-  prog2_name: 'Full Body Glow',
-  prog2_desc: 'Transforma tus piernas con rutinas enfocadas en ganar fuerza y tono muscular.',
+  prog2_name: 'Pierna • Cuádricep y Femoral',
+  prog2_desc: 'Desarrolla fuerza y volumen en cuádriceps y femorales con movimientos de empuje y tirón de pierna.',
   prog2_includes: ['Plan de 6 semanas completo', 'Rutinas hipertrofia', 'Rutinas funcionales', 'Tips de recuperación'],
 
   prog3_name: 'Core & Confidence',

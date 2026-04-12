@@ -47,16 +47,20 @@ export const es = {
   prog1_includes: ['Rutinas semanales en video', 'Guía de activación', 'Seguimiento de progreso', 'Comunidad de apoyo'],
 
   prog2_name: 'Full Body Glow',
-  prog2_desc: 'Transforma todo tu cuerpo en 6 semanas. Upper body, piernas y cardio fusionados en rutinas efectivas.',
-  prog2_includes: ['Plan de 6 semanas completo', 'Rutinas upper body', 'Rutinas de pierna', 'Tips de recuperación'],
+  prog2_desc: 'Transforma tus piernas con rutinas enfocadas en ganar fuerza y tono muscular.',
+  prog2_includes: ['Plan de 6 semanas completo', 'Rutinas hipertrofia', 'Rutinas funcionales', 'Tips de recuperación'],
 
   prog3_name: 'Core & Confidence',
   prog3_desc: 'Fortalece tu centro, mejora tu postura y gana la confianza que siempre quisiste.',
   prog3_includes: ['Rutinas de core progresivas', 'Ejercicios de movilidad', 'Técnica de respiración', 'Planificador semanal'],
 
-  prog4_name: 'Guía Nutricional',
-  prog4_desc: 'Una guía completa y permanente para entender qué comer, cuándo y cómo para potenciar tus resultados.',
-  prog4_includes: ['Plan de alimentación base', 'Lista de compras saludable', 'Recetas fitness deliciosas', 'Suplementación básica'],
+  prog4_name: 'Upper Body',
+  prog4_desc: 'Esculpe y fortalece tu tren superior con rutinas enfocadas en brazos y espalda.',
+  prog4_includes: ['Rutinas enfocadas', 'Tips de hipertrofia', 'Mejora de postura', 'Seguimiento de progreso'],
+
+  prog5_name: 'Guía Nutricional',
+  prog5_desc: 'Una guía completa y permanente para entender qué comer, cuándo y cómo para potenciar tus resultados.',
+  prog5_includes: ['Plan de alimentación base', 'Lista de compras saludable', 'Recetas fitness deliciosas', 'Suplementación básica'],
 
   // Categories
   cat_glutes: 'Glúteos',

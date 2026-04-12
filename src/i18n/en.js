@@ -41,16 +41,20 @@ export const en = {
   prog1_includes: ['Weekly video routines', 'Activation guide', 'Progress tracking', 'Support community'],
 
   prog2_name: 'Full Body Glow',
-  prog2_desc: 'Transform your entire body in 6 weeks. Upper body, legs and cardio fused into effective routines.',
-  prog2_includes: ['Complete 6-week plan', 'Upper body routines', 'Leg routines', 'Recovery tips'],
+  prog2_desc: 'Transform your legs with routines focused on strength and muscle tone.',
+  prog2_includes: ['Complete 6-week plan', 'Hypertrophy routines', 'Functional routines', 'Recovery tips'],
 
   prog3_name: 'Core & Confidence',
   prog3_desc: 'Strengthen your core, improve your posture and gain the confidence you always wanted.',
   prog3_includes: ['Progressive core routines', 'Mobility exercises', 'Breathing technique', 'Weekly planner'],
 
-  prog4_name: 'Nutrition Guide',
-  prog4_desc: 'A complete and permanent guide to understand what to eat, when and how to power up your results.',
-  prog4_includes: ['Base nutrition plan', 'Healthy shopping list', 'Delicious fitness recipes', 'Basic supplementation'],
+  prog4_name: 'Upper Body',
+  prog4_desc: 'Sculpt and strengthen your upper body with routines focused on arms and back.',
+  prog4_includes: ['Focused routines', 'Hypertrophy tips', 'Posture improvement', 'Progress tracking'],
+
+  prog5_name: 'Nutrition Guide',
+  prog5_desc: 'A complete and permanent guide to understand what to eat, when and how to power up your results.',
+  prog5_includes: ['Base nutrition plan', 'Healthy shopping list', 'Delicious fitness recipes', 'Basic supplementation'],
 
   cat_glutes: 'Glutes',
   cat_fullbody: 'Full Body',

@@ -15,19 +15,21 @@ import AnimatedSection from '../components/AnimatedSection';
 
 import arelyPic1 from '../assets/Arely_picture1.jpeg';
 import arelyPic2 from '../assets/Arely_picture2.jpeg';
-import arelyPic3 from '../assets/Arely_picture3.jpeg';
+// import arelyPic4 from '../assets/Arely_picture4.jpeg';
 
 const PROGRAM_ICONS = {
   'glam-glutes': Flame,
-  'full-body-glow': Zap,
+  'legs': Zap,
   'core-confidence': CircleDot,
+  'upper-body': Dumbbell,
   'nutrition-guide': Leaf,
 };
 
 const PROGRAM_COLORS = {
   'glam-glutes': { from: '#FDE8E8', to: '#F9C5C5', accent: '#D4A5A5' },
-  'full-body-glow': { from: '#EDE9FC', to: '#DDD6F3', accent: '#B8A9D9' },
+  'legs': { from: '#EDE9FC', to: '#DDD6F3', accent: '#B8A9D9' },
   'core-confidence': { from: '#E2F5EE', to: '#C8EDE0', accent: '#8DCAB4' },
+  'upper-body': { from: '#F0F8FF', to: '#D0E4F5', accent: '#8E9AAF' },
   'nutrition-guide': { from: '#FFF3E4', to: '#FBDAB5', accent: '#E8C99A' },
 };
 
@@ -227,11 +229,11 @@ export default function HomePage() {
             <AnimatedSection animation="fade-right" className="nutrition-img-col">
               <div
                 className="nutrition-img"
-                style={{ backgroundImage: `url("${arelyPic3}")` }}
+                style={{ backgroundImage: `url("${nutritionProgram.image}")` }}
               >
                 <div className="nutrition-img-card glass-card">
                   <Award size={20} color="var(--cream-dark)" />
-                  <p>15+ recetas fitness deliciosas incluidas</p>
+
                 </div>
               </div>
             </AnimatedSection>
@@ -351,7 +353,7 @@ export default function HomePage() {
             <AnimatedSection animation="fade-left" delay={200} className="about-img-col">
               <div className="about-img-frame">
                 <img
-                  src={arelyPic2}
+                  src={arelyPic1}
                   alt="Arely"
                   className="about-img"
                 />

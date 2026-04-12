@@ -1,10 +1,9 @@
 // =============================================
 // HARDCODED PROGRAMS DATA — arely.fit
-// =============================================
-import absImg from '../assets/Arely_picture_abs.PNG';
-import fullbodyImg from '../assets/Arely_picture_fullbody.PNG';
-import gluteosImg from '../assets/Arely_picture_gluteos.PNG';
-import runImg from '../assets/Arely_picture_run.jpeg';
+import gluteosImg from '../assets/Arely_picture_rutina_gluteos.jpg';
+import coreImg from '../assets/Arely_picture_rutina_core.PNG';
+import upperbodyImg from '../assets/Arely_picture_rutina_upperbody.PNG';
+import nutricionImg from '../assets/Arely_picture_gui_nutricional.jpeg';
 
 
 export const PROGRAMS = [
@@ -22,7 +21,6 @@ export const PROGRAMS = [
     accentColor: 'var(--rose)',
     checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
     image: gluteosImg,
-    // Detailed weekly plan
     weeklyPlan: [
       {
         week: 1,
@@ -60,52 +58,13 @@ export const PROGRAMS = [
     ],
     tags: ['glúteos', 'fuerza', 'volumen', 'sin equipo posible'],
   },
-  {
-    id: 'full-body-glow',
-    nameKey: 'prog2_name',
-    descKey: 'prog2_desc',
-    includesKey: 'prog2_includes',
-    price: 19.99,
-    durationWeeks: 6,
-    category: 'cat_fullbody',
-    levelKey: 'beginner',
-    emoji: '✨',
-    gradient: 'var(--gradient-fullbody)',
-    accentColor: 'var(--lavender-dark)',
-    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
-    image: fullbodyImg,
-    weeklyPlan: [
-      {
-        week: 1,
-        title: 'Base & Forma',
-        exercises: [
-          { name: 'Sentadilla con peso corporal', sets: 3, reps: '15', rest: '45 seg' },
-          { name: 'Flexiones modificadas', sets: 3, reps: '10-12', rest: '45 seg' },
-          { name: 'Remo con mancuerna', sets: 3, reps: '12 c/lado', rest: '45 seg' },
-          { name: 'Plancha', sets: 3, reps: '30 seg', rest: '30 seg' },
-          { name: 'Jumping jacks', sets: 3, reps: '30 seg', rest: '30 seg' },
-        ]
-      },
-      {
-        week: 2,
-        title: 'Fuerza y Resistencia',
-        exercises: [
-          { name: 'Sentadilla con mancuerna', sets: 4, reps: '12', rest: '60 seg' },
-          { name: 'Press de hombro', sets: 3, reps: '12', rest: '60 seg' },
-          { name: 'Hip hinge', sets: 3, reps: '15', rest: '45 seg' },
-          { name: 'Tricep dips en silla', sets: 3, reps: '12', rest: '45 seg' },
-          { name: 'Burpees modificados', sets: 3, reps: '8', rest: '60 seg' },
-        ]
-      },
-    ],
-    tags: ['full body', 'upper body', 'piernas', 'cardio', 'principiantes'],
-  },
+
   {
     id: 'core-confidence',
     nameKey: 'prog3_name',
     descKey: 'prog3_desc',
     includesKey: 'prog3_includes',
-    price: 9.99,
+    price: 7.99,
     durationWeeks: 4,
     category: 'cat_core',
     levelKey: 'all_levels',
@@ -113,7 +72,7 @@ export const PROGRAMS = [
     gradient: 'var(--gradient-core)',
     accentColor: 'var(--mint-dark)',
     checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
-    image: absImg,
+    image: coreImg,
     weeklyPlan: [
       {
         week: 1,
@@ -141,10 +100,39 @@ export const PROGRAMS = [
     tags: ['core', 'abdomen', 'postura', 'movilidad'],
   },
   {
-    id: 'nutrition-guide',
+    id: 'upper-body',
     nameKey: 'prog4_name',
     descKey: 'prog4_desc',
     includesKey: 'prog4_includes',
+    price: 7.99,
+    durationWeeks: 4,
+    category: 'cat_fullbody',
+    levelKey: 'intermediate',
+    emoji: '💪',
+    gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+    accentColor: '#8E9AAF',
+    checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
+    image: upperbodyImg,
+    weeklyPlan: [
+      {
+        week: 1,
+        title: 'Bases Upper Body',
+        exercises: [
+          { name: 'Flexiones (o rodillas)', sets: 3, reps: '10', rest: '60 seg' },
+          { name: 'Remo invertido o mancuerna', sets: 3, reps: '12 c/lado', rest: '45 seg' },
+          { name: 'Press militar', sets: 3, reps: '12', rest: '45 seg' },
+          { name: 'Elevaciones laterales', sets: 3, reps: '15', rest: '30 seg' },
+          { name: 'Bicep curl', sets: 3, reps: '15', rest: '30 seg' },
+        ]
+      },
+    ],
+    tags: ['brazos', 'espalda', 'fuerza upper body'],
+  },
+  {
+    id: 'nutrition-guide',
+    nameKey: 'prog5_name',
+    descKey: 'prog5_desc',
+    includesKey: 'prog5_includes',
     price: 2.99,
     durationWeeks: null, // permanent
     category: 'cat_nutrition',
@@ -153,7 +141,7 @@ export const PROGRAMS = [
     gradient: 'var(--gradient-nutrition)',
     accentColor: 'var(--cream-dark)',
     checkoutLink: 'https://pay.hotmart.com/U105119323X?checkoutMode=10',
-    image: runImg,
+    image: nutricionImg,
     weeklyPlan: [],
     nutritionContent: {
       macros: { protein: '30%', carbs: '40%', fat: '30%' },
@@ -183,14 +171,14 @@ export const TESTIMONIALS = [
     stars: 5,
     avatar: '👩🏽',
   },
-  {
-    name: 'Valentina R.',
-    flag: '🇨🇴',
-    program: 'Full Body Glow',
-    text: 'El programa Full Body Glow me cambió la vida. Me siento más fuerte y con más energía que nunca.',
-    stars: 5,
-    avatar: '👩🏻',
-  },
+  // {
+  //   name: 'Valentina R.',
+  //   flag: '🇨🇴',
+  //   program: 'Full Body Glow',
+  //   text: 'El programa Full Body Glow me cambió la vida. Me siento más fuerte y con más energía que nunca.',
+  //   stars: 5,
+  //   avatar: '👩🏻',
+  // },
   {
     name: 'Camila T.',
     flag: '🇦🇷',

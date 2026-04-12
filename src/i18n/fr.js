@@ -48,9 +48,13 @@ export const fr = {
   prog3_desc: 'Renforce ton centre, améliore ta posture et gagne la confiance que tu as toujours voulu.',
   prog3_includes: ['Routines core progressives', 'Exercices de mobilité', 'Technique de respiration', 'Planificateur hebdomadaire'],
 
-  prog4_name: 'Guide Nutritionnel',
-  prog4_desc: 'Un guide complet et permanent pour comprendre quoi manger, quand et comment pour booster tes résultats.',
-  prog4_includes: ['Plan alimentaire de base', 'Liste de courses saine', 'Recettes fitness délicieuses', 'Supplémentation de base'],
+  prog4_name: 'Upper Body',
+  prog4_desc: 'Sculpte et renforce le haut de ton corps avec des routines axées sur les bras et le dos.',
+  prog4_includes: ['Routines ciblées', "Conseils d'hypertrophie", 'Amélioration de la posture', 'Suivi des progrès'],
+
+  prog5_name: 'Guide Nutritionnel',
+  prog5_desc: 'Un guide complet et permanent pour comprendre quoi manger, quand et comment pour booster tes résultats.',
+  prog5_includes: ['Plan alimentaire de base', 'Liste de courses saine', 'Recettes fitness délicieuses', 'Supplémentation de base'],
 
   cat_glutes: 'Fessiers',
   cat_fullbody: 'Corps Entier',

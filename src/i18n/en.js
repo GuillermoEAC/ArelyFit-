@@ -72,7 +72,7 @@ export const en = {
   footer_rights: '© 2025 arely.fit — All rights reserved',
   footer_privacy: 'Privacy',
   footer_terms: 'Terms',
-  footer_contact_email: 'hello@arely.fit',
+  footer_contact_email: 'espinozaarely860@gmail.com',
 
   about_title: 'About Me',
   about_text: 'I am Arely, a certified trainer with a passion for empowering women through fitness. Every program was designed with love, science and real experience.',

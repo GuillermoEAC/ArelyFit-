@@ -81,7 +81,7 @@ export const es = {
   footer_rights: '© 2025 arely.fit — Todos los derechos reservados',
   footer_privacy: 'Privacidad',
   footer_terms: 'Términos',
-  footer_contact_email: 'hola@arely.fit',
+  footer_contact_email: 'espinozaarely860@gmail.com',
 
   // About
   about_title: 'Sobre Mí',

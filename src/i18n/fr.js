@@ -76,7 +76,7 @@ export const fr = {
   footer_rights: '© 2025 arely.fit — Tous droits réservés',
   footer_privacy: 'Confidentialité',
   footer_terms: 'Conditions',
-  footer_contact_email: 'bonjour@arely.fit',
+  footer_contact_email: 'espinozaarely860@gmail.com',
 
   about_title: 'À Propos de Moi',
   about_text: 'Je suis Arely, coach certifiée avec la passion d\'autonomiser les femmes à travers le fitness. Chaque programme a été conçu avec amour, science et expérience réelle.',

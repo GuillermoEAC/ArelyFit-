@@ -76,7 +76,7 @@ export const ar = {
   footer_rights: '© 2025 arely.fit — جميع الحقوق محفوظة',
   footer_privacy: 'الخصوصية',
   footer_terms: 'الشروط',
-  footer_contact_email: 'مرحبا@arely.fit',
+  footer_contact_email: 'espinozaarely860@gmail.com',
 
   about_title: 'عني',
   about_text: 'أنا أريلي، مدربة معتمدة بشغف تمكين النساء من خلال اللياقة البدنية. تم تصميم كل برنامج بحب وعلم وخبرة حقيقية.',
